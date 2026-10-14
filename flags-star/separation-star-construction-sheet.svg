@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1760 2120" width="1760" height="2120" role="img" aria-labelledby="t d">
+<title id="t">The Star of Victoria: construction sheet</title>
+<desc id="d">A dimensioned construction drawing of the proposed flag of Victoria at 1:2, a white seven-pointed star on a crimson ground set at two fifths of the length, with a table of standard proportions and the colour specification.</desc>
+<rect width="1760" height="2120" fill="#fff"/>
+<g fill="#000" stroke="none" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="25" text-anchor="middle">
+<text x="880.0" y="74.0" font-size="46" text-anchor="middle" font-weight="700">The Star of Victoria</text>
+<text x="880.0" y="116.0" font-size="25" text-anchor="middle">Construction sheet. Proportion 1 : 2, height to width. Seven points, at two fifths of the length.</text>
+<text x="880.0" y="150.0" font-size="22" text-anchor="middle">Every dimension is given as a ratio of the hoist, A.</text>
+<rect x="350" y="340" width="1200" height="600" fill="#fff" stroke="#000" stroke-width="2.4"/>
+<path d="M 830.00,436.00 L 869.34,558.31 L 989.49,512.81 L 918.39,619.82 L 1028.89,685.39 L 900.89,696.53 L 918.51,823.80 L 830.00,730.67 L 741.49,823.80 L 759.11,696.53 L 631.11,685.39 L 741.61,619.82 L 670.51,512.81 L 790.66,558.31 Z" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<line x1="830.0" y1="314.0" x2="830.0" y2="966.0" stroke="#000" stroke-width="1.0" stroke-dasharray="7 6"/>
+<line x1="324.0" y1="640.0" x2="1576.0" y2="640.0" stroke="#000" stroke-width="1.0" stroke-dasharray="7 6"/>
+<line x1="950.0" y1="314.0" x2="950.0" y2="966.0" stroke="#000" stroke-width="0.9" stroke-dasharray="3 7"/>
+<text x="950.0" y="306.0" font-size="19" text-anchor="middle">true centre</text>
+<circle cx="830.0" cy="640.0" r="204.00" fill="none" stroke="#000" stroke-width="0.9" stroke-dasharray="5 6"/>
+<circle cx="830.0" cy="640.0" r="90.67" fill="none" stroke="#000" stroke-width="0.9" stroke-dasharray="5 6"/>
+<line x1="350.0" y1="940.0" x2="350.0" y2="1026.0" stroke="#000" stroke-width="0.8" stroke-dasharray="4 5"/>
+<line x1="830.0" y1="940.0" x2="830.0" y2="1026.0" stroke="#000" stroke-width="0.8" stroke-dasharray="4 5"/>
+<line x1="350.0" y1="1010.0" x2="830.0" y2="1010.0" stroke="#000" stroke-width="1.4"/>
+<path d="M 350.0,1010.0 L 359.0,1006.0 L 359.0,1014.0 Z" fill="#000"/>
+<path d="M 830.0,1010.0 L 821.0,1006.0 L 821.0,1014.0 Z" fill="#000"/>
+<text x="590.0" y="1001.0" font-size="23" text-anchor="middle">C</text>
+<line x1="350.0" y1="940.0" x2="350.0" y2="1106.0" stroke="#000" stroke-width="0.8" stroke-dasharray="4 5"/>
+<line x1="631.1" y1="940.0" x2="631.1" y2="1106.0" stroke="#000" stroke-width="0.8" stroke-dasharray="4 5"/>
+<line x1="1028.9" y1="940.0" x2="1028.9" y2="1106.0" stroke="#000" stroke-width="0.8" stroke-dasharray="4 5"/>
+<line x1="1550.0" y1="940.0" x2="1550.0" y2="1106.0" stroke="#000" stroke-width="0.8" stroke-dasharray="4 5"/>
+<line x1="350.0" y1="1090.0" x2="631.1" y2="1090.0" stroke="#000" stroke-width="1.4"/>
+<path d="M 350.0,1090.0 L 359.0,1086.0 L 359.0,1094.0 Z" fill="#000"/>
+<path d="M 631.1,1090.0 L 622.1,1086.0 L 622.1,1094.0 Z" fill="#000"/>
+<text x="490.6" y="1081.0" font-size="23" text-anchor="middle">J</text>
+<line x1="631.1" y1="1090.0" x2="1028.9" y2="1090.0" stroke="#000" stroke-width="1.4"/>
+<path d="M 631.1,1090.0 L 640.1,1086.0 L 640.1,1094.0 Z" fill="#000"/>
+<path d="M 1028.9,1090.0 L 1019.9,1086.0 L 1019.9,1094.0 Z" fill="#000"/>
+<text x="830.0" y="1081.0" font-size="23" text-anchor="middle">G</text>
+<line x1="1028.9" y1="1090.0" x2="1550.0" y2="1090.0" stroke="#000" stroke-width="1.4"/>
+<path d="M 1028.9,1090.0 L 1037.9,1086.0 L 1037.9,1094.0 Z" fill="#000"/>
+<path d="M 1550.0,1090.0 L 1541.0,1086.0 L 1541.0,1094.0 Z" fill="#000"/>
+<text x="1289.4" y="1081.0" font-size="23" text-anchor="middle">K</text>
+<line x1="350.0" y1="340.0" x2="350.0" y2="254.0" stroke="#000" stroke-width="0.8" stroke-dasharray="4 5"/>
+<line x1="1550.0" y1="340.0" x2="1550.0" y2="254.0" stroke="#000" stroke-width="0.8" stroke-dasharray="4 5"/>
+<line x1="350.0" y1="270.0" x2="1550.0" y2="270.0" stroke="#000" stroke-width="1.4"/>
+<path d="M 350.0,270.0 L 359.0,266.0 L 359.0,274.0 Z" fill="#000"/>
+<path d="M 1550.0,270.0 L 1541.0,266.0 L 1541.0,274.0 Z" fill="#000"/>
+<text x="950.0" y="261.0" font-size="23" text-anchor="middle">B</text>
+<line x1="298.0" y1="340.0" x2="298.0" y2="940.0" stroke="#000" stroke-width="1.4"/>
+<path d="M 298.0,340.0 L 294.0,349.0 L 302.0,349.0 Z" fill="#000"/>
+<path d="M 298.0,940.0 L 294.0,931.0 L 302.0,931.0 Z" fill="#000"/>
+<text x="287.0" y="648.0" font-size="23" text-anchor="end">A</text>
+<line x1="240.0" y1="340.0" x2="240.0" y2="640.0" stroke="#000" stroke-width="1.4"/>
+<path d="M 240.0,340.0 L 236.0,349.0 L 244.0,349.0 Z" fill="#000"/>
+<path d="M 240.0,640.0 L 236.0,631.0 L 244.0,631.0 Z" fill="#000"/>
+<text x="229.0" y="498.0" font-size="23" text-anchor="end">D</text>
+<line x1="631.1" y1="436.0" x2="1102.9" y2="436.0" stroke="#000" stroke-width="0.8" stroke-dasharray="4 5"/>
+<line x1="631.1" y1="823.8" x2="1102.9" y2="823.8" stroke="#000" stroke-width="0.8" stroke-dasharray="4 5"/>
+<line x1="1086.9" y1="436.0" x2="1086.9" y2="823.8" stroke="#000" stroke-width="1.4"/>
+<path d="M 1086.9,436.0 L 1082.9,445.0 L 1090.9,445.0 Z" fill="#000"/>
+<path d="M 1086.9,823.8 L 1082.9,814.8 L 1090.9,814.8 Z" fill="#000"/>
+<text x="1075.9" y="637.9" font-size="23" text-anchor="end">H</text>
+<path d="M 590.00,1154.80 L 621.47,1252.65 L 717.59,1216.25 L 660.71,1301.86 L 749.11,1354.32 L 646.71,1363.22 L 660.81,1465.04 L 590.00,1390.53 L 519.19,1465.04 L 533.29,1363.22 L 430.89,1354.32 L 519.29,1301.86 L 462.41,1216.25 L 558.53,1252.65 Z" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<circle cx="590" cy="1318" r="163.20" fill="none" stroke="#000" stroke-width="0.9" stroke-dasharray="5 6"/>
+<circle cx="590" cy="1318" r="72.53" fill="none" stroke="#000" stroke-width="0.9" stroke-dasharray="5 6"/>
+<line x1="590.0" y1="1318.0" x2="590.0" y2="1154.8" stroke="#000" stroke-width="1.4"/>
+<text x="607.0" y="1197.2" font-size="23" text-anchor="start">E</text>
+<line x1="590.0" y1="1318.0" x2="621.5" y2="1252.6" stroke="#000" stroke-width="1.4"/>
+<text x="644.2" y="1238.4" font-size="23" text-anchor="start">F</text>
+<circle cx="590" cy="1318" r="3.2" fill="#000"/>
+<text x="590.0" y="1543.2" font-size="23" text-anchor="middle" font-weight="700">STAR, ENLARGED</text>
+<text x="590.0" y="1577.2" font-size="21" text-anchor="middle">Seven points, one point up. Inner radius four ninths of the</text>
+<text x="590.0" y="1605.2" font-size="21" text-anchor="middle">outer, as the Australian National Flag specifies for its stars.</text>
+<text x="1040.0" y="1270.0" font-size="23" text-anchor="start" font-weight="700">COLOUR</text>
+<rect x="1040" y="1300" width="600" height="156" fill="none" stroke="#000" stroke-width="1.2"/>
+<line x1="1040.0" y1="1352.0" x2="1640.0" y2="1352.0" stroke="#000" stroke-width="0.9"/>
+<line x1="1040.0" y1="1404.0" x2="1640.0" y2="1404.0" stroke="#000" stroke-width="0.9"/>
+<text x="1340.0" y="1334.0" font-size="21" text-anchor="middle" font-weight="700">HEX</text>
+<text x="1460.0" y="1334.0" font-size="21" text-anchor="middle" font-weight="700">R</text>
+<text x="1530.0" y="1334.0" font-size="21" text-anchor="middle" font-weight="700">G</text>
+<text x="1600.0" y="1334.0" font-size="21" text-anchor="middle" font-weight="700">B</text>
+<rect x="1056" y="1359" width="34" height="34" fill="#C40A47" stroke="#000" stroke-width="1"/>
+<text x="1160.0" y="1386.0" font-size="21" text-anchor="start">Crimson</text>
+<text x="1340.0" y="1386.0" font-size="21" text-anchor="middle" font-family="'Courier New', 'DejaVu Sans Mono', monospace">#C40A47</text>
+<text x="1460.0" y="1386.0" font-size="21" text-anchor="middle" font-family="'Courier New', 'DejaVu Sans Mono', monospace">196</text>
+<text x="1530.0" y="1386.0" font-size="21" text-anchor="middle" font-family="'Courier New', 'DejaVu Sans Mono', monospace">10</text>
+<text x="1600.0" y="1386.0" font-size="21" text-anchor="middle" font-family="'Courier New', 'DejaVu Sans Mono', monospace">71</text>
+<rect x="1056" y="1411" width="34" height="34" fill="#FFFFFF" stroke="#000" stroke-width="1"/>
+<text x="1160.0" y="1438.0" font-size="21" text-anchor="start">White</text>
+<text x="1340.0" y="1438.0" font-size="21" text-anchor="middle" font-family="'Courier New', 'DejaVu Sans Mono', monospace">#FFFFFF</text>
+<text x="1460.0" y="1438.0" font-size="21" text-anchor="middle" font-family="'Courier New', 'DejaVu Sans Mono', monospace">255</text>
+<text x="1530.0" y="1438.0" font-size="21" text-anchor="middle" font-family="'Courier New', 'DejaVu Sans Mono', monospace">255</text>
+<text x="1600.0" y="1438.0" font-size="21" text-anchor="middle" font-family="'Courier New', 'DejaVu Sans Mono', monospace">255</text>
+<text x="350.0" y="1672.0" font-size="23" text-anchor="start" font-weight="700">STANDARD PROPORTIONS</text>
+<rect x="350" y="1700" width="1060" height="330" fill="none" stroke="#000" stroke-width="1.2"/>
+<line x1="350.0" y1="1730.0" x2="1410.0" y2="1730.0" stroke="#000" stroke-width="1.2"/>
+<text x="358.0" y="1721.0" font-size="21" text-anchor="start"></text>
+<text x="970.0" y="1721.0" font-size="21" text-anchor="end" font-weight="700">RATIO TO A</text>
+<text x="1180.0" y="1721.0" font-size="21" text-anchor="end" font-weight="700">ON A 600 HOIST</text>
+<text x="1330.0" y="1721.0" font-size="21" text-anchor="end" font-weight="700">KEY</text>
+<text x="358.0" y="1751.0" font-size="21" text-anchor="start">Hoist (height) of flag</text>
+<text x="970.0" y="1751.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">1.0</text>
+<text x="1180.0" y="1751.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">600</text>
+<text x="1330.0" y="1751.0" font-size="21" text-anchor="end" font-weight="700">A</text>
+<line x1="350.0" y1="1760.0" x2="1410.0" y2="1760.0" stroke="#000" stroke-width="0.8"/>
+<text x="358.0" y="1781.0" font-size="21" text-anchor="start">Fly (length) of flag</text>
+<text x="970.0" y="1781.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">2.0</text>
+<text x="1180.0" y="1781.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">1200</text>
+<text x="1330.0" y="1781.0" font-size="21" text-anchor="end" font-weight="700">B</text>
+<line x1="350.0" y1="1790.0" x2="1410.0" y2="1790.0" stroke="#000" stroke-width="0.8"/>
+<text x="358.0" y="1811.0" font-size="21" text-anchor="start">Star centre, from the hoist</text>
+<text x="970.0" y="1811.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">0.8000</text>
+<text x="1180.0" y="1811.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">480.00</text>
+<text x="1330.0" y="1811.0" font-size="21" text-anchor="end" font-weight="700">C</text>
+<line x1="350.0" y1="1820.0" x2="1410.0" y2="1820.0" stroke="#000" stroke-width="0.8"/>
+<text x="358.0" y="1841.0" font-size="21" text-anchor="start">Star centre, from the top</text>
+<text x="970.0" y="1841.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">0.5000</text>
+<text x="1180.0" y="1841.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">300.00</text>
+<text x="1330.0" y="1841.0" font-size="21" text-anchor="end" font-weight="700">D</text>
+<line x1="350.0" y1="1850.0" x2="1410.0" y2="1850.0" stroke="#000" stroke-width="0.8"/>
+<text x="358.0" y="1871.0" font-size="21" text-anchor="start">Star circumradius</text>
+<text x="970.0" y="1871.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">0.3400</text>
+<text x="1180.0" y="1871.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">204.00</text>
+<text x="1330.0" y="1871.0" font-size="21" text-anchor="end" font-weight="700">E</text>
+<line x1="350.0" y1="1880.0" x2="1410.0" y2="1880.0" stroke="#000" stroke-width="0.8"/>
+<text x="358.0" y="1901.0" font-size="21" text-anchor="start">Star inner radius</text>
+<text x="970.0" y="1901.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">0.1511</text>
+<text x="1180.0" y="1901.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">90.67</text>
+<text x="1330.0" y="1901.0" font-size="21" text-anchor="end" font-weight="700">F</text>
+<line x1="350.0" y1="1910.0" x2="1410.0" y2="1910.0" stroke="#000" stroke-width="0.8"/>
+<text x="358.0" y="1931.0" font-size="21" text-anchor="start">Star width, point to point</text>
+<text x="970.0" y="1931.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">0.6630</text>
+<text x="1180.0" y="1931.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">397.77</text>
+<text x="1330.0" y="1931.0" font-size="21" text-anchor="end" font-weight="700">G</text>
+<line x1="350.0" y1="1940.0" x2="1410.0" y2="1940.0" stroke="#000" stroke-width="0.8"/>
+<text x="358.0" y="1961.0" font-size="21" text-anchor="start">Star height, point to point</text>
+<text x="970.0" y="1961.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">0.6463</text>
+<text x="1180.0" y="1961.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">387.80</text>
+<text x="1330.0" y="1961.0" font-size="21" text-anchor="end" font-weight="700">H</text>
+<line x1="350.0" y1="1970.0" x2="1410.0" y2="1970.0" stroke="#000" stroke-width="0.8"/>
+<text x="358.0" y="1991.0" font-size="21" text-anchor="start">Margin, hoist side</text>
+<text x="970.0" y="1991.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">0.4685</text>
+<text x="1180.0" y="1991.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">281.11</text>
+<text x="1330.0" y="1991.0" font-size="21" text-anchor="end" font-weight="700">J</text>
+<line x1="350.0" y1="2000.0" x2="1410.0" y2="2000.0" stroke="#000" stroke-width="0.8"/>
+<text x="358.0" y="2021.0" font-size="21" text-anchor="start">Margin, fly side</text>
+<text x="970.0" y="2021.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">0.8685</text>
+<text x="1180.0" y="2021.0" font-size="21" text-anchor="end" font-family="'Courier New', 'DejaVu Sans Mono', monospace">521.11</text>
+<text x="1330.0" y="2021.0" font-size="21" text-anchor="end" font-weight="700">K</text>
+<text x="880.0" y="2086.0" font-size="21" text-anchor="middle">K less J is 0.4000 of the hoist exactly, at any star size. Designed by Brodie Geoffrey Dunn.</text>
+</g>
+</svg>
