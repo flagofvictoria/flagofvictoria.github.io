@@ -1,0 +1,382 @@
+/* Flag of Victoria: shared stylesheet for both proposal pages.
+   Palette and masthead taken from the designer's own EMPTY DAYS headers: grey paper, red, black.
+   The red is the flag's own crimson, #CA003C, everywhere on the page. The page sits on a darker
+   grey desk between two black bands, as on the poster.
+   Type: Tinos (serif, Times metrics), JetBrains Mono (captions, data), ProggyClean (the red bar). */
+
+@font-face{font-family:"Tinos";src:url("fonts/tinos-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Tinos";src:url("fonts/tinos-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Tinos";src:url("fonts/tinos-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url("fonts/jetbrains-mono-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url("fonts/jetbrains-mono-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"EB Garamond";src:url("fonts/eb-garamond-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"EB Garamond";src:url("fonts/eb-garamond-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"EB Garamond";src:url("fonts/eb-garamond-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"ProggyClean";src:url("fonts/proggy-clean.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+
+:root{
+  --paper:#FFFFFF;      /* the page: white, as in the portfolio reference */
+  --desk:#DFE2DF;       /* either side of the page: the grey that was the page */
+  --frame:#D6D6D6;      /* the thin border inside the page, sampled from the portfolio cover */
+  --line:#BFBFBF;       /* section rules, lighter than the type */
+  --frame-inset:clamp(8px,calc((100vw - 900px) / 10),40px);
+  --page:1320px;
+  --paper-up:#F4F5F4;   /* panels, a step off the white */
+  --ink:#000000;
+  --ink-soft:#3B3E3B;
+  --text:#1D1D1D;       /* body text, a step off black */
+  --muted:#8E8E8E;      /* numerals and the open / close marks */
+  --label:#767A76;      /* small labels */
+  --red:#CA003C;        /* the flag crimson: bar, map, markers, links */
+  --bar-text:#FFFFFF;
+  --rule:#9DA29D;
+  --rule-soft:#C2C6C2;
+  --serif:"Tinos","Times New Roman",Times,serif;
+  --display:"EB Garamond",Garamond,"Times New Roman",serif;   /* headings, as in the portfolio */
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --pixel:"ProggyClean","JetBrains Mono",ui-monospace,monospace;
+  --wrap:1180px;
+  --gut:clamp(18px,4vw,48px);
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--desk);color:var(--text);font:400 1.125rem/1.62 var(--serif);
+  font-kerning:normal;text-rendering:optimizeLegibility}
+a{color:var(--red);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.18em}
+a:hover{color:var(--ink)}
+a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+p{margin:.55em 0 .9em}
+img{max-width:100%}
+
+.skip{position:absolute;left:-9999px;top:0;z-index:10;background:var(--ink);color:#fff;
+  padding:10px 16px;font:400 .85rem/1 var(--mono);text-decoration:none}
+.skip:focus{left:0;color:#fff}
+
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+
+/* ---------- the page, on the desk ---------- */
+.page::before{content:"";position:absolute;inset:var(--frame-inset);border:1px solid var(--frame);
+  box-shadow:0 0 0 calc(var(--frame-inset) + 2px) var(--paper);pointer-events:none;z-index:4}
+.page{position:relative;max-width:var(--page);margin:0 auto;background:var(--paper);overflow:hidden;overflow:clip;
+  box-shadow:0 0 0 1px rgba(0,0,0,.10),0 0 30px rgba(0,0,0,.08)}
+
+/* ---------- black band at the top: the two proposals ---------- */
+.topband{background:var(--ink);position:sticky;top:0;z-index:50}
+:target,[id]{scroll-margin-top:84px}
+.topband .wrap{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;padding-top:30px}
+
+/* ---------- top tabs: the two proposals ---------- */
+.tabs{display:flex;gap:0;font:400 .8rem/1 var(--mono)}
+.tabs a{color:#fff;text-decoration:none;padding:1.05em 1.1em .95em 0;margin-right:1.1em}
+.tabs a[aria-current="page"]{box-shadow:inset 0 -3px 0 var(--red)}
+.tabs a:hover{color:var(--red)}
+
+/* ---------- masthead ---------- */
+.mast{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,380px);
+  grid-template-areas:"text map";gap:24px 40px;align-items:start;padding:calc(var(--frame-inset) + clamp(24px,3vw,40px)) 0 clamp(18px,3vw,30px)}
+.mast-text{grid-area:text;min-width:0}
+.title-row{display:grid;grid-template-columns:minmax(0,max-content) auto;gap:0 clamp(16px,3vw,36px);align-items:start}
+.mast h1{margin:0;font:400 clamp(2.4rem,7.4vw,5.6rem)/.92 var(--display);letter-spacing:.03em;
+  text-transform:uppercase;overflow-wrap:break-word}
+.bar-red{position:relative;display:block;margin:.32em 0 0;background:var(--red);color:var(--bar-text);
+  font:400 clamp(.72rem,1.6vw,1rem)/1.15 var(--pixel);letter-spacing:.3em;text-transform:uppercase;
+  padding:.38em .55em .32em}
+/* the red bar runs on to the right-hand edge of the page */
+.bar-red::after{content:"";position:absolute;left:100%;top:0;bottom:0;width:200vw;background:var(--red)}
+/* the monogram, small, in the black band */
+.brand{display:flex;align-items:center;padding:0 0 5px}
+.brand img{display:block;width:auto;height:28px;filter:invert(1)}
+.bars{display:flex;flex-wrap:wrap;gap:6px;margin:clamp(14px,2.4vw,24px) 0 0}
+.bars span{background:var(--ink);color:#fff;font:400 clamp(1rem,2.3vw,1.6rem)/1 var(--display);
+  letter-spacing:.2em;text-transform:uppercase;padding:.32em .7em .26em}
+
+/* the state, red and very small, in the top right-hand corner of the page */
+.vicmap{position:absolute;top:calc(var(--frame-inset) + 14px);right:calc(var(--frame-inset) + 14px);margin:0;width:56px}
+.vicmap svg{display:block;width:100%;height:auto}
+.vicmap .land{fill:var(--red)}
+
+/* ---------- hero flag ---------- */
+.stage{position:relative;padding-top:clamp(18px,3vw,30px)}
+/* the rule under the masthead runs left until it meets the inner border */
+.stage::before{content:"";position:absolute;top:-4px;left:-100vw;right:0;height:9px;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath fill='%23111' d='M5 0 10 5 5 10 0 5z'/%3E%3C/svg%3E") no-repeat calc(100vw - var(--to-frame,78px) - 4.5px) center/9px 9px,
+    linear-gradient(var(--line),var(--line)) no-repeat left center/100% 1px}
+.hero{margin:0;position:relative;z-index:2}
+.flag{display:block;width:100%;height:auto;border:1px solid var(--ink)}
+.herocap{display:flex;flex-wrap:wrap;align-items:center;gap:.6em 1.4em;margin:.8em 0 0;
+  font:400 .82rem/1.45 var(--mono)}
+#heroWhich{font-weight:700}
+.thumb.variant-render{margin-top:1.8em}
+.herocap .name{font:italic 400 1.15rem/1.4 var(--display);flex-basis:100%}
+.navbtns{display:inline-flex;gap:4px}
+.navbtn{width:2.3rem;height:2.1rem;padding:0;border:0;background:var(--ink);color:#fff;
+  font:400 1.25rem/1 var(--serif);cursor:pointer}
+.navbtn:hover{background:var(--red)}
+
+/* ---------- article with a right rail ---------- */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;grid-template-areas:"main rail";
+  gap:0 clamp(32px,5vw,64px);padding:clamp(26px,4vw,44px) 0 calc(var(--frame-inset) + clamp(32px,4vw,56px))}
+.layout > main{grid-area:main;max-width:44rem;min-width:0}
+.rail{grid-area:rail;margin-top:-72px}   /* the box starts level with the caption under the hero flag */
+.rail .stick{position:sticky;top:20px;z-index:2}
+
+.infobox{width:100%;border-collapse:collapse;background:var(--paper);border:1px solid var(--ink);
+  clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,0 100%);
+  font-size:.95rem;line-height:1.45}
+.infobox th,.infobox td{text-align:left;vertical-align:top;padding:.55em .75em}
+.infobox tr + tr th,.infobox tr + tr td{border-top:1px solid #E3E3E3}
+.infobox th[scope="row"]{width:8.6em;white-space:nowrap;font:400 .62rem/1.6 var(--mono);letter-spacing:.09em;
+  text-transform:uppercase;color:var(--label);padding-top:.95em}
+.infobox th.ib-head,.infobox th.ib-sec{background:var(--ink);color:#fff;font:400 1.06rem/1.25 var(--display);
+  letter-spacing:.14em;text-transform:uppercase;text-align:left;padding:.6em .75em .5em}
+.infobox td.ib-img{padding:.75em}
+.infobox td.ib-img img{display:block;width:100%;height:auto;border:1px solid var(--frame)}
+
+/* contents */
+.toc{margin:1.4em 0 .4em;padding:1em 1.2em 1.1em;border:1px solid var(--ink);background:var(--paper-up);
+  display:inline-block;min-width:16em}
+.toc h2{font:700 .8rem/1 var(--mono);margin:0 0 .8em;padding:0;border:0;letter-spacing:.04em}
+.toc h2::before{display:none}
+.toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;font:400 .86rem/1.4 var(--mono)}
+.toc li{counter-increment:toc;margin:.32em 0;display:flex;gap:.6em;align-items:baseline}
+.toc li::before{content:counter(toc,upper-roman);font:400 1.02rem/1 var(--display);color:var(--ink);min-width:2.2em}
+.toc a{color:var(--ink);text-decoration:none}
+.toc a:hover{color:var(--red);text-decoration:underline}
+
+/* headings */
+/* major sections: a Roman numeral, the title in the portfolio serif, and a light rule that runs left
+   to the inner border and ends at the right in a small black eight-pointed star */
+main{counter-reset:sec}
+main h2{position:relative;font:400 clamp(1.45rem,2.5vw,1.85rem)/1.2 var(--display);letter-spacing:.12em;
+  text-transform:uppercase;margin:2.4em 0 1em;padding:0;border-bottom:0;transition:color .15s}
+main .fold > summary h2{counter-increment:sec;display:flex;align-items:baseline;margin:0}
+main .fold > summary h2::before{content:counter(sec,upper-roman);min-width:2.3em;letter-spacing:.02em;color:var(--muted);transition:color .15s}
+main .fold > summary::before{content:"";position:absolute;left:-100vw;right:0;bottom:-.5rem;height:1rem;pointer-events:none;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath fill='%23111' d='M5 0 10 5 5 10 0 5z'/%3E%3C/svg%3E") no-repeat calc(100vw - var(--to-frame,78px) - 4.5px) center/9px 9px,
+    linear-gradient(var(--line),var(--line)) no-repeat left center/100% 1px}
+main h3{font:700 1.12rem/1.35 var(--serif);margin:1.5em 0 .3em}
+main h2 + h3{margin-top:.9em}
+
+/* essay prose, set as in APA 7: every paragraph indented, no gap between paragraphs */
+main > p,main .fold-body > p{margin:0;text-indent:2.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:8 4 3;-webkit-hyphenate-limit-before:4;-webkit-hyphenate-limit-after:3}
+main > p{margin-bottom:.4em}
+main .fold-body > :not(p) + p{margin-top:.2em}
+main .fold-body > p + :not(p){margin-top:1.2em}
+
+/* folding sections: the whole heading is the control; a quiet Show / Hide sits above the rule */
+:root{interpolate-size:allow-keywords}
+.fold{margin:2.4em 0 0}
+.fold > summary{display:block;list-style:none;cursor:pointer;position:relative;padding:0 3em .38em 0;margin:0 0 1em}
+.fold > summary::-webkit-details-marker{display:none}
+.fold > summary::after{content:"+" / "";position:absolute;right:.1rem;bottom:.36em;font:400 1.6rem/1 var(--display);
+  color:var(--muted);transition:color .15s}
+.fold[open] > summary::after{content:"\2212" / ""}
+.fold > summary:hover::after,.fold > summary:focus-visible::after{color:var(--red)}
+.fold > summary:hover h2,.fold > summary:hover h2::before{color:var(--red)}
+.fold > summary:focus-visible{outline:2px solid var(--red);outline-offset:4px}
+.fold:not([open]) > summary{margin-bottom:0}
+.fold::details-content{block-size:0;overflow-x:visible;overflow-y:clip;transition:block-size .35s ease,content-visibility .35s allow-discrete}
+.fold[open]::details-content{block-size:auto}
+@media (prefers-reduced-motion:reduce){.fold::details-content{transition:none}}
+.fold-now .fold::details-content{transition:none}
+
+/* figures */
+.thumb{margin:1.3em 0 1.5em}
+.thumb img{display:block;width:100%;height:auto}
+.thumb > a.full img,.thumb > img{border:1px solid var(--ink)}
+.thumb img.flag{border:1px solid var(--ink)}
+.thumb figcaption{font:400 .8rem/1.55 var(--mono);color:var(--ink-soft);padding:.6em 0 0}
+.thumb figcaption p{margin:0 0 .35em}
+.thumb figcaption b{color:var(--ink)}
+.gallery{display:grid;gap:14px;margin:1.2em 0 .6em}
+@media(min-width:700px){.gallery{grid-template-columns:repeat(3,1fr)}}
+.gallery .thumb{margin:0;display:flex;flex-direction:column}
+.gallery figcaption{flex:1;display:flex;flex-direction:column}
+.gallery figcaption .dl{margin-top:auto}
+.thumb.tright{float:right;clear:right;width:14em;margin:.4em 0 1em 1.6em}
+@media(max-width:600px){.thumb.tright{float:none;width:auto;max-width:19em;margin:.8em 0 1em}}
+
+/* swatches */
+.sw{display:inline-block;width:.95em;height:.95em;border:0;vertical-align:-.1em;margin-right:.5em;position:relative}
+.sw-star{background:#003C71}
+.sw-star7,.sw-star8,.sw-cross{background:#003C71}
+.sw-white{box-shadow:inset 0 0 0 1px var(--line)}
+.sw-star8::before{content:"";position:absolute;inset:6%;background:#fff;clip-path:polygon(50.0% 2.0%,59.2% 27.8%,83.9% 16.1%,72.2% 40.8%,98.0% 50.0%,72.2% 59.2%,83.9% 83.9%,59.2% 72.2%,50.0% 98.0%,40.8% 72.2%,16.1% 83.9%,27.8% 59.2%,2.0% 50.0%,27.8% 40.8%,16.1% 16.1%,40.8% 27.8%)}
+.sw-cross{background:#CA003C}
+.sw-cross::before,.sw-cross::after{content:"";position:absolute;background:#003C71;box-shadow:0 0 0 1px #fff}
+.sw-cross::before{left:40%;right:40%;top:0;bottom:0}.sw-cross::after{top:40%;bottom:40%;left:0;right:0}
+.sw-star::before,.sw-star7::before{content:"";position:absolute;inset:8%;background:#fff}
+.sw-star::before{clip-path:polygon(50% 0,61.8% 34.5%,98% 34.5%,67% 57.3%,79% 90.5%,50% 69%,21% 90.5%,33% 57.3%,2% 34.5%,38.2% 34.5%)}
+.sw-star7::before{clip-path:polygon(50% 2%,59.3% 30.8%,87.5% 20.1%,70.8% 45.3%,96.8% 60.7%,66.7% 63.3%,70.8% 93.2%,50% 71.3%,29.2% 93.2%,33.3% 63.3%,3.2% 60.7%,29.2% 45.3%,12.5% 20.1%,40.7% 30.8%)}
+.star-page .sw-star7,.star-page .sw-star8{background:#A80431}
+
+/* specification */
+.spec{border-collapse:collapse;margin:1.2em 0;font-size:.98rem;line-height:1.5;width:100%;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.spec caption{text-align:left;font:400 .62rem/1 var(--mono);padding:0 0 .9em;letter-spacing:.14em;text-transform:uppercase;color:var(--label)}
+.spec th,.spec td{padding:.6em .2em;text-align:left;vertical-align:top}
+.spec tr + tr th,.spec tr + tr td{border-top:1px solid #E3E3E3}
+.spec th{width:30%;padding-right:1.2em;font:400 .62rem/2.6 var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--label)}
+.spec td{font-variant-numeric:tabular-nums}
+@media(max-width:520px){.spec th,.spec td,.spec tr + tr th,.spec tr + tr td{display:block;width:auto;border-top:0}
+  .spec th{padding-bottom:0;line-height:1.6} .spec td{padding-top:.15em}
+  .spec tr{display:block} .spec tr + tr{border-top:1px solid #E3E3E3}}
+
+/* reference cards */
+.refs{display:grid;gap:26px 22px;margin:1em 0 .4em}
+@media(min-width:640px){.refs{grid-template-columns:repeat(2,1fr)}}
+.rc{margin:0;display:flex;flex-direction:column}
+.rc .media{height:150px;display:flex;align-items:center;justify-content:center;gap:14px;padding:12px;
+  background:var(--paper-up);border:1px solid var(--rule)}
+.rc .media img{display:block;max-width:100%;max-height:124px;width:auto;height:auto;border:1px solid var(--rule-soft);background:#fff;min-width:0}
+.rc .media img.rnd{border:0;background:none}
+.rc figcaption{font-size:.95rem;line-height:1.5;margin-top:.65em}
+.rc h4{font:700 1.02rem/1.3 var(--serif);margin:0 0 .2em}
+.rc .yr{font-weight:400;font-family:var(--mono);font-size:.78rem;color:var(--ink-soft);margin-left:.3em}
+.rc .role{font-style:italic;margin:0 0 .2em}
+.rc p{margin:0 0 .4em}
+.rc .src{font:400 .72rem/1.5 var(--mono);color:var(--ink-soft)}
+
+/* reference board: the flags packed at one height, as on a reference board; each opens its notes */
+.refx{margin:1em 0 .4em}
+.refx-strip{display:flex;gap:6px;padding:8px;background:#EDEDED}
+.refx-tile{flex:var(--ar,2) 1 0;min-width:0;display:flex;flex-direction:column;color:var(--text);text-decoration:none;cursor:pointer}
+.refx-media{display:block;position:relative;background:#fff}
+.refx-media img{display:block;width:100%;height:auto;outline:1px solid rgba(0,0,0,.12);outline-offset:-1px}
+/* the name shows on hover, focus or when open; a small + / - sits in the corner of every image */
+.refx-name{position:absolute;left:0;right:0;bottom:0;padding:.35em .5em;background:rgba(17,17,17,.78);color:#fff;
+  font:400 .62rem/1.25 var(--mono);letter-spacing:.02em;opacity:0;transition:opacity .15s}
+.refx-mark{position:absolute;top:4px;right:4px;width:18px;height:18px;display:grid;place-items:center;
+  background:rgba(255,255,255,.94);border:1px solid rgba(0,0,0,.14);transition:background .15s,border-color .15s}
+.refx-mark::before{content:"+";font:400 15px/1 var(--display);color:var(--muted);transform:translateY(-1px)}
+.refx-tile:hover .refx-name,.refx-tile:focus-visible .refx-name,.refx-tile[aria-expanded="true"] .refx-name{opacity:1}
+.refx-tile:hover .refx-mark,.refx-tile:focus-visible .refx-mark{border-color:var(--red)}
+.refx-tile:hover .refx-mark::before,.refx-tile:focus-visible .refx-mark::before{color:var(--red)}
+.refx-tile[aria-expanded="true"] .refx-mark{background:var(--red);border-color:var(--red)}
+.refx-tile[aria-expanded="true"] .refx-mark::before{content:"\2212";color:#fff}
+.refx-tile:hover img,.refx-tile[aria-expanded="true"] img{outline:2px solid var(--red);outline-offset:-2px}
+.refx-tile:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.refx-panels{margin-top:10px}
+.refx-panel{padding:.7em .9em .5em;background:var(--paper);border:1px solid var(--frame);margin:0 0 8px;
+  font-size:.95rem;line-height:1.5}
+.refx.js .refx-panel{margin:0}
+.refx-panel h4{font:700 1.02rem/1.3 var(--serif);margin:0 0 .2em}
+.refx-panel .yr{font-weight:400;font-family:var(--mono);font-size:.78rem;color:var(--ink-soft);margin-left:.3em}
+.refx-panel .role{font-style:italic;margin:0 0 .2em}
+.refx-panel p{margin:0 0 .4em}
+.refx-panel .src{font:400 .72rem/1.5 var(--mono);color:var(--ink-soft)}
+@media(max-width:640px){.refx-strip{flex-wrap:wrap}.refx-tile{flex:1 1 40%}.refx-tile[style*=".65"]{flex:0 1 22%}}
+
+/* in-text citations (APA 7): a small link mark. Hover or focus shows the source in a card, a click opens
+   its entry in the References. The APA text stays in the mark for screen readers and for print. */
+a.cite{display:inline-block;position:relative;width:1.25em;height:1.25em;margin:0 .04em 0 .18em;vertical-align:.42em;
+  font-size:.6em;line-height:1;border:1px solid var(--line);border-radius:3px;background:var(--paper);color:var(--muted);
+  text-decoration:none;transition:color .15s,border-color .15s}
+a.cite::before{content:"";position:absolute;inset:0;margin:auto;width:.86em;height:.86em;background:currentColor;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg fill='none' stroke='%23000' stroke-width='1.7' transform='rotate(-45 8 8)'%3E%3Crect x='1.2' y='5.4' width='7.6' height='5.2' rx='2.6'/%3E%3Crect x='7.2' y='5.4' width='7.6' height='5.2' rx='2.6'/%3E%3C/g%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg fill='none' stroke='%23000' stroke-width='1.7' transform='rotate(-45 8 8)'%3E%3Crect x='1.2' y='5.4' width='7.6' height='5.2' rx='2.6'/%3E%3Crect x='7.2' y='5.4' width='7.6' height='5.2' rx='2.6'/%3E%3C/g%3E%3C/svg%3E") center/contain no-repeat}
+a.cite:hover,a.cite:focus-visible,a.cite.on{color:var(--red);border-color:var(--red)}
+a.cite:focus-visible{outline:2px solid var(--red);outline-offset:1px}
+.cw{white-space:nowrap}
+.cite-t{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.cite-card{position:absolute;z-index:60;width:max-content;max-width:min(25rem,calc(100vw - 24px));padding:.6rem .8rem .7rem;
+  background:var(--paper);border:1px solid var(--frame);box-shadow:0 8px 24px rgba(0,0,0,.10);
+  font:400 .84rem/1.5 var(--serif);color:var(--text);text-align:left;overflow-wrap:anywhere}
+.cite-card[hidden]{display:none}
+.cite-card .cc-in{display:block;margin:0 0 .3rem;font:400 .62rem/1.4 var(--mono);letter-spacing:.09em;
+  text-transform:uppercase;color:var(--label)}
+.cite-card a{color:inherit}
+.reflist{list-style:none;margin:.6em 0 0;padding:0;font-size:.95rem;line-height:1.55}
+.reflist li{margin:.5em 0;padding-left:2em;text-indent:-2em;overflow-wrap:anywhere}
+.reflist li:target{background:#F2D9D6}
+
+/* sources */
+.srclist{margin:.6em 0 0;padding-left:2.6em;font-size:.95rem;line-height:1.55}
+.srclist li{margin:.35em 0;padding-left:.3em}
+.srclist li::marker{font:400 .8rem var(--mono);color:var(--red)}
+.srclist li:target,sup.fn:target{background:#F2D9D6}
+.srclist .bl{margin-right:.2em;font-family:var(--mono);font-size:.8rem}
+.srclist .bl sup{font-size:.85em;font-weight:700;line-height:0}
+.srclist .bl a,.srclist .bl sup a{text-decoration:none;margin-right:.25em}
+sup.fn{font:400 .62em/0 var(--mono);margin-left:.1em;white-space:nowrap}
+sup.fn a{text-decoration:none}
+
+/* ---------- footer: a black band, as on the poster ---------- */
+.foot{background:var(--ink);color:#E4E6E4;margin-top:0}
+.foot .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,26rem);gap:20px 48px;align-items:end;
+  padding-top:clamp(30px,5vw,56px);padding-bottom:clamp(30px,5vw,56px)}
+.foot-title{margin:0;font:400 clamp(2rem,5.4vw,3.8rem)/.95 var(--display);letter-spacing:.015em;text-transform:uppercase;color:#fff}
+.foot-title .stop{color:var(--red)}
+.foot-meta{font:400 .76rem/1.6 var(--mono);color:#BFC3BF;border-left:1px solid #4A4D4A;padding-left:20px}
+.foot-meta p{margin:0 0 .5em}
+.foot-meta a{color:#fff}
+
+/* ---------- responsive ---------- */
+@media(max-width:980px){
+  .layout{grid-template-columns:minmax(0,1fr);grid-template-areas:"rail" "main"}
+  .rail{max-width:30rem}
+  .rail .stick{position:relative}
+  .rail{margin-top:0;margin-bottom:1.8em}
+  .bar-red::after{display:none}
+}
+@media(max-width:900px){
+  .mast{grid-template-columns:minmax(0,1fr);grid-template-areas:"text"}
+}
+@media(max-width:760px){
+  .mast{grid-template-columns:minmax(0,1fr);grid-template-areas:"text";gap:6px}
+  .vicmap{width:44px;top:12px;right:12px}
+  .foot .wrap{grid-template-columns:minmax(0,1fr)}
+  .foot-meta{border-left:0;padding-left:0;border-top:1px solid #4A4D4A;padding-top:16px}
+}
+@media(max-width:480px){
+  .title-row{grid-template-columns:minmax(0,1fr) auto}
+  .bar-red{letter-spacing:.24em}
+  .bars span{letter-spacing:.12em}
+  main > p,main .fold-body > p{text-align:left;text-indent:1.6em}
+  .fold > summary{padding-right:2.4em}
+  .fold > summary::after{right:.1rem;font-size:1.4rem}
+  .tabs a{white-space:nowrap;font-size:.92em;padding-right:.3em;margin-right:1em}
+}
+
+@media print{
+  a.cite{display:inline;width:auto;height:auto;margin:0;border:0;font-size:inherit;vertical-align:baseline;color:inherit}
+  a.cite::before{content:none}
+  .cite-t{position:static;width:auto;height:auto;overflow:visible;clip-path:none;white-space:normal}
+  .cite-t::before{content:" ("}.cite-t::after{content:")"}
+  .cite-cont .cite-t::after{content:""}.cite-more .cite-t::before{content:"; "}
+  .cite-card{display:none}
+  body{background:#fff;font-size:10.5pt}
+  .topband,.vicmap,.navbtns,.skip,.srclist .bl,.bar-red::after,.refx-hint{display:none}
+  .page{box-shadow:none;overflow:visible}
+  .refx-panel[hidden]{display:block}
+  .layout{display:block}
+  .rail .stick{position:relative}
+  a{color:#000}
+  .srclist a[href^="http"]::after{content:" <" attr(href) ">";font-size:.85em;word-break:break-all}
+  .foot{background:#fff;color:#000} .foot-title{color:#000} .foot-meta{color:#000}
+  .page::before{display:none}
+  h2,h3,h4{break-after:avoid}
+  figure,.toc,.infobox,tr{break-inside:avoid}
+}
+
+/* Desktop: the summary box floats at the top right and stays there. Text keeps its measure. Pictures
+   marked .wide take whatever width is free: the text column beside the box, the full page below it. */
+@media(min-width:981px){
+  .layout{display:block}
+  .layout::after{content:"";display:block;clear:both}
+  .rail{float:right;width:300px;margin:-72px 0 1.4em clamp(32px,5vw,64px)}
+  .rail .stick{position:relative;top:auto}
+  .layout > main{max-width:none}
+  .layout > main > p,.fold > summary,.fold-body > :not(.wide){max-width:min(44rem,calc(100% - 300px - clamp(32px,5vw,64px)))}
+  .layout > main > section{max-width:none}
+  .wide{display:flow-root;max-width:none}
+  .gallery.wide{display:grid}
+  .wide.sheet{max-width:58rem}
+  .refx.wide .refx-panels{max-width:44rem}
+}
+
+/* Star of Victoria page only: its own crimson, and no summary box, so the text keeps one measure. */
+.star-page{--red:#A80431}
+.star-page .withclip{display:flow-root}
+@media(min-width:981px){
+  .star-page .layout > main > p,.star-page .fold > summary,.star-page .fold-body > :not(.wide){max-width:44rem}
+}
