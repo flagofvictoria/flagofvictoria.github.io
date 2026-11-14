@@ -377,6 +377,10 @@ sup.fn a{text-decoration:none}
 /* Star of Victoria page only: its own crimson, and no summary box, so the text keeps one measure. */
 .star-page{--red:#A80431}
 .star-page .withclip{display:flow-root}
+.star-page .withclip > p{margin:0}
+.star-page .transcript{margin:.9em 0 0;padding:0 0 0 1em;border-left:2px solid var(--line);font-size:.94em;line-height:1.5;color:var(--ink-soft)}
+.star-page .transcript p{margin:0}
+.star-page .transcript .sc{font-variant:small-caps;letter-spacing:.03em}
 @media(min-width:981px){
   .star-page .layout > main > p,.star-page .fold > summary,.star-page .fold-body > :not(.wide){max-width:44rem}
 }
