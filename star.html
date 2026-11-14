@@ -418,5 +418,12 @@ points.</p>
   addEventListener('scroll', function(){ if (!card.hidden && !card.matches(':hover')) hide(true); }, {passive: true});
 })();
 </script>
+<script>
+/* Opened from the folder on disk, the clean web addresses do not exist: link the files instead. */
+if (location.protocol === 'file:') {
+  document.querySelectorAll('a[href="./"]').forEach(function (a) { a.setAttribute('href', 'index.html'); });
+  document.querySelectorAll('a[href="star"]').forEach(function (a) { a.setAttribute('href', 'star.html'); });
+}
+</script>
 </body>
 </html>
