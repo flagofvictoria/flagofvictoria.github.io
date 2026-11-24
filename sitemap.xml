@@ -3,21 +3,21 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://flagofvictoria.github.io/</loc>
-    <lastmod>2026-11-14</lastmod>
-    <image:image><image:loc>https://flagofvictoria.github.io/flags/cross-of-victoria-3-eight-points.png</image:loc></image:image>
-    <image:image><image:loc>https://flagofvictoria.github.io/flags/cross-of-victoria-1-five-points.png</image:loc></image:image>
-    <image:image><image:loc>https://flagofvictoria.github.io/flags/cross-of-victoria-2-seven-points.png</image:loc></image:image>
-    <image:image><image:loc>https://flagofvictoria.github.io/flags/cross-of-victoria-union-canton.png</image:loc></image:image>
-    <image:image><image:loc>https://flagofvictoria.github.io/flags/cross-of-victoria-3-eight-points-mockup.jpg</image:loc></image:image>
-    <image:image><image:loc>https://flagofvictoria.github.io/flags/cross-of-victoria-construction-sheet.png</image:loc></image:image>
+    <lastmod>2026-11-24</lastmod>
+    <image:image><image:loc>https://flagofvictoria.github.io/flags/Victoria_Flag_proposal_CV_EP.png</image:loc></image:image>
+    <image:image><image:loc>https://flagofvictoria.github.io/flags/Victoria_Flag_proposal_CV_FP.png</image:loc></image:image>
+    <image:image><image:loc>https://flagofvictoria.github.io/flags/Victoria_Flag_proposal_CV_SP.png</image:loc></image:image>
+    <image:image><image:loc>https://flagofvictoria.github.io/flags/Victoria_Flag_proposal_CV_UK.png</image:loc></image:image>
+    <image:image><image:loc>https://flagofvictoria.github.io/flags/Victoria_Flag_proposal_CV_EP_mockup.jpg</image:loc></image:image>
+    <image:image><image:loc>https://flagofvictoria.github.io/flags/Victoria_Flag_proposal_CV_construction_sheet.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://flagofvictoria.github.io/star</loc>
-    <lastmod>2026-11-14</lastmod>
-    <image:image><image:loc>https://flagofvictoria.github.io/flags-star/star-of-victoria-3-eight-points.png</image:loc></image:image>
-    <image:image><image:loc>https://flagofvictoria.github.io/flags-star/star-of-victoria-1-five-points.png</image:loc></image:image>
-    <image:image><image:loc>https://flagofvictoria.github.io/flags-star/star-of-victoria-2-seven-points.png</image:loc></image:image>
-    <image:image><image:loc>https://flagofvictoria.github.io/flags-star/star-of-victoria-3-eight-points-mockup.jpg</image:loc></image:image>
-    <image:image><image:loc>https://flagofvictoria.github.io/flags-star/star-of-victoria-construction-sheet.png</image:loc></image:image>
+    <lastmod>2026-11-24</lastmod>
+    <image:image><image:loc>https://flagofvictoria.github.io/flags-star/Victoria_Flag_proposal_SV_EP.png</image:loc></image:image>
+    <image:image><image:loc>https://flagofvictoria.github.io/flags-star/separation-star-1-five-points-1844.png</image:loc></image:image>
+    <image:image><image:loc>https://flagofvictoria.github.io/flags-star/Victoria_Flag_proposal_SV_SP.png</image:loc></image:image>
+    <image:image><image:loc>https://flagofvictoria.github.io/flags-star/Victoria_Flag_proposal_SV_EP_mockup.jpg</image:loc></image:image>
+    <image:image><image:loc>https://flagofvictoria.github.io/flags-star/Victoria_Flag_proposal_SV_construction_sheet.png</image:loc></image:image>
   </url>
 </urlset>
